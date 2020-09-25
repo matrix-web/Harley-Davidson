@@ -1,0 +1,30 @@
+.top-panel {
+    height: 78px;
+    background-color: #262626;
+    color: #f8f8f8;
+}
+
+.row-top-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-panel__notification {
+    font-size: .75rem;
+    font-weight: 500;
+}
+
+.top-panel__icons {
+    display: flex;
+    align-items: center;
+}
+
+.top-panel__link {
+    display: inline-block;
+    margin-right: 28px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

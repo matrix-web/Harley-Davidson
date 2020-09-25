@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: $baseFontSize;
+}
+
+body {
+    font-family: $baseFont;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+.container {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+// font-family: 'Teko', sans-serif;
+// font-family: 'Montserrat', sans-serif;
