@@ -16,6 +16,7 @@
 }
 
 .header-nav {
+    display: flex;
     font-size: 1.4375rem;
     color: #404040;
     font-family: 'Teko', sans-serif;
@@ -25,12 +26,11 @@
 }
 
 .header__nav-link {
-    display: flex;
     position: relative;
     margin-right: 52px;
     color: #404040;
     text-decoration: none;
-    @include transition("background-color", 0.2s, "ease-in");
+    @include transition(background-color, 0.2s, ease-in);
 
 
     &:last-child {
@@ -50,7 +50,7 @@
     &::after {
         position: absolute;
         right: -28px;
-        top: 12px;
+        top: 8px;
         content: "";
         display: block;
         width: 6px;
@@ -63,8 +63,7 @@
 
 .header__button {
     height: 66px;
-    padding-top: 23px;
-    padding: 0 38px;
+    padding: 23px 36px 0;
     background-color: #004cff;
 
     font-family: 'Teko', sans-serif;
@@ -75,8 +74,7 @@
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: .45px;
-    transition: background-color 0.2s ease-in;
-    @include transition("background-color", 0.2s, "ease-in");
+    @include transition(background-color, 0.2s, ease-in);
 
     &:focus,
     &:hover {
@@ -110,7 +108,7 @@
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    @include transition("color, border-color", 0.2s, "ease-in");
+    transition: border-color, color 0.2s ease-in;
 
     &:focus,
     &:hover {
