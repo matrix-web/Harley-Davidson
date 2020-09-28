@@ -2,6 +2,9 @@
 @import "./base/base";
 @import "./base/mixins";
 
+// Components
+@import "./components/info";
+
 // sections
 @import "./sections/top-panel";
 @import "./sections/header";
