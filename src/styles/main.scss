@@ -2,9 +2,11 @@
 @import "./base/base";
 @import "./base/mixins";
 
-
 // sections
 @import "./sections/top-panel";
+@import "./sections/header";
+@import "./sections/top-info";
+@import "./sections/products";
 @import "./sections/bottom-info";
 
 // utils
