@@ -1,0 +1,27 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #004cff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color .3s ease-in;
+
+    &:hover,
+    &:focus {
+        background-color: #2564f8;
+    }
+
+    &:active {
+        background-color: #0043e0;
+    }
+}
