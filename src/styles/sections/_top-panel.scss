@@ -11,8 +11,14 @@
 }
 
 .top-panel__notification {
-    font-size: .75rem;
+    font-size: .6875rem;
+    margin-right: 15px;
     font-weight: 500;
+
+    @media (min-width: 780px) {
+        font-size: .75rem;
+        margin-right: 0;
+    }
 }
 
 .top-panel__icons {
