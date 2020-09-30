@@ -4,14 +4,10 @@
 
 .bottom-info__row {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-}
 
-// Вынести в компонент info
-.info--medium {
-    width: 530px;
-}
-
-.info--large {
-    width: 777px;
+    @media (min-width: 740px) {
+        flex-direction: row;
+    }
 }
