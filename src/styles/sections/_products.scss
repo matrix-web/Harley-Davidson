@@ -1,5 +1,9 @@
 .products {
-    padding: 60px 0 65px;
+    padding: 40px 0 35px;
+
+    @media (min-width: 768px) {
+        padding: 60px 0 65px;
+    }
 }
 
 .products__title {

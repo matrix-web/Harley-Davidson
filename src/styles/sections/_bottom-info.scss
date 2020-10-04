@@ -1,5 +1,9 @@
 .bottom-info {
-    padding-top: 65px;
+    padding-top: 35px;
+
+    @media (min-width: 768px) {
+        padding-top: 65px;
+    }
 }
 
 .bottom-info__row {
