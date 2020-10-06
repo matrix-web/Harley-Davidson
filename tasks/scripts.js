@@ -15,6 +15,14 @@ const argv = yargs.argv,
 
 webpackconfig.mode = production ? 'production' : 'development'
 webpackconfig.devtool = production ? false : 'source-map'
+webpackconfig.plugins = [
+    new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+    })
+]
+    
 
 function scripts() {
     return src(paths.scripts.src)

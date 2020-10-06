@@ -1,0 +1,17 @@
+.bottom-info {
+    padding-top: 35px;
+
+    @media (min-width: 768px) {
+        padding-top: 65px;
+    }
+}
+
+.bottom-info__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: 740px) {
+        flex-direction: row;
+    }
+}

@@ -2,9 +2,22 @@
 @import "./base/base";
 @import "./base/mixins";
 
+// Components
+@import "./components/info";
+@import "./components/social";
+@import "./components/burger-icon";
+@import "./components/slide";
 
 // sections
 @import "./sections/top-panel";
+@import "./sections/header";
+@import "./sections/top-info";
+@import "./sections/products";
+@import "./sections/bottom-info";
+@import "./sections/subscribe";
+@import "./sections/service";
+@import "./sections/gallery";
+@import "./sections/footer";
 
 // utils
 @import "./utils/margins";

@@ -4,7 +4,7 @@ module.exports = {
     },
     output: {
         filename: "[name].js",
-        chunkFilename: "[name].[hash].js",
+        chunkFilename: "[name].js",
         publicPath: "/"
     },
     optimization: {

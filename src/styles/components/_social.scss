@@ -1,0 +1,40 @@
+.social {
+    display: flex;
+
+    @media (min-width: 992px) {
+        justify-content: space-between;
+    }
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: #004cff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color .3s ease-in;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: #2564f8;
+    }
+
+    &:active {
+        background-color: #0043e0;
+    }
+
+    @media (min-width: 992px) {
+        margin-right: 0;
+    }
+}
