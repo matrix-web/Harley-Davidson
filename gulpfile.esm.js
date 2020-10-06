@@ -8,6 +8,7 @@ import fonts from "./tasks/fonts"
 import server from "./tasks/server"
 import images from "./tasks/image"
 import favicons from "./tasks/favicons"
+import copyLibs from "./tasks/copyLibs"
 
 const paths = {
     html: {
@@ -47,18 +48,26 @@ const paths = {
     favicons: {
         src: "./src/img/favicon/*.{jpg,jpeg,png,gif}",
         dist: "./dist/img/favicons/",
+    },
+    libs: {
+        css: {
+            owlCarousel: {
+                src: './node_modules/owl.carousel/dist/assets/owl.carousel.min.css',
+                dist: "./dist/libs/owlCarousel"
+            }
+        }
     }
 }
 
 export { paths }
 
 export const development = series(cleanDist,
-    parallel([processHTML, styles, scripts, images, sprites, fonts, favicons]),
+    parallel([processHTML, styles, scripts, images, sprites, fonts, favicons, copyLibs]),
     parallel(server)
 )
 
 export const production = series(cleanDist,
-    parallel([processHTML, styles, scripts, images, sprites, fonts, favicons])
+    parallel([processHTML, styles, scripts, images, sprites, fonts, favicons, copyLibs])
 )
 
 export default development

@@ -1,37 +1,58 @@
 <div class="products">
     <div class="container">
         <h2 class="products__title">our product</h2>
+
         <div class="products__filter">
-            <a class="products__filter-item products__filter-item--active" href="#!">Helmet</a>
-            <a class="products__filter-item" href="#!">Motorbike</a>
-            <a class="products__filter-item" href="#!">Accessories</a>
-            <a class="products__filter-item" href="#!">Sale</a>
+            <button class="products__filter-item" data-filter="all">All</button>
+            <button class="products__filter-item" data-filter=".cat-helmet">Helmet</button>
+            <button class="products__filter-item" data-filter=".cat-motorbike">Motorbike</button>
+            <button class="products__filter-item" data-filter=".cat-accessories">Accessories</button>
+            <button class="products__filter-item" data-filter=".cat-sale">Sale</button>
         </div>
 
         <div class="products__row">
-            <div class="products-card">
+
+            <div class="products-card mix cat-helmet">
                 <div class="products-card__img">
                     <img src="../../img/products/DROID-MATT-GUN-METAL.jpg" alt="DROID-MATT-GUN-METAL">
                 </div>
-                <div class="products-card__title">Sample Product For You</div>
+                <div class="products-card__title">Helmet</div>
                 <div class="products-card__price">$200.00</div>
             </div>
 
-            <div class="products-card">
+            <div class="products-card mix cat-helmet">
                 <div class="products-card__img">
                     <img src="../../img/products/GHOST-LEGEND.png" alt="GHOST-LEGEND">
                 </div>
-                <div class="products-card__title">Sample Product For You</div>
+                <div class="products-card__title">Helmet</div>
                 <div class="products-card__price">$200.00</div>
             </div>
 
-            <div class="products-card">
+            <div class="products-card mix cat-motorbike">
                 <div class="products-card__img">
                     <img src="../../img/products/BOXER-FULLBLACK.png" alt="BOXER-FULLBLACK">
                 </div>
-                <div class="products-card__title">Sample Product For You</div>
+                <div class="products-card__title">Motorbike</div>
                 <div class="products-card__price">$200.00</div>
             </div>
+
+            <div class="products-card mix cat-accessories">
+                <div class="products-card__img">
+                    <img src="../../img/products/BOXER-FULLBLACK.png" alt="BOXER-FULLBLACK">
+                </div>
+                <div class="products-card__title">Accessories</div>
+                <div class="products-card__price">$200.00</div>
+            </div>
+
+            <div class="products-card mix cat-sale">
+                <div class="products-card__img">
+                    <img src="../../img/products/BOXER-FULLBLACK.png" alt="BOXER-FULLBLACK">
+                </div>
+                <div class="products-card__title">Sale</div>
+                <div class="products-card__price">$200.00</div>
+            </div>
+
         </div>
     </div>
 </div>
+<!-- Sample Product For You -->
